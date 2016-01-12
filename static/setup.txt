@@ -1,0 +1,18 @@
+includeLibs.tx_html2textlibrary = EXT:html2textlibrary/Classes/Utility/Html2TextLibrary.php
+
+plaintext = PAGE
+plaintext {
+  typeNum = 99
+
+  config {
+    disableAllHeaderCode = 1
+  }
+
+  10 = USER
+  ### TemplaVoila or any other Template Engine
+  10.userFunc = tx_templavoila_pi1->main_page
+  ### Pass HTML output to Html2Text Script
+  10.stdWrap.preUserFunc = Html2TextLibrary->convert
+  ### Add Direct Mail wrapper tags for plaintext newsletter
+  10.stdWrap.outerWrap = <!--DMAILER_SECTION_BOUNDARY_-->|<!--DMAILER_SECTION_BOUNDARY_END-->
+}
