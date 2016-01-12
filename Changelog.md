@@ -5,4 +5,4 @@ Changelog
 
   * 1.0.0
   * TASK Fork EXT:ods_plaintext
-  * TASK Update html2text script
+  * FEATURE Update html2text script to 1.0.1
