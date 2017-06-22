@@ -1,5 +1,3 @@
-includeLibs.tx_html2textlibrary = EXT:html2textlibrary/Classes/Utility/Html2TextLibrary.php
-
 plaintext = PAGE
 plaintext {
   typeNum = 99

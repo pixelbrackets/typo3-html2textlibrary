@@ -27,13 +27,9 @@ class Html2TextLibrary extends tslib_pibase {
 	var $pi_checkCHash = TRUE;
 
 	function convert($content, $conf) {
-
-		// Include the HTML-cleaner class definition file.
-		require_once('Html2Text.php');
-
 		// Instantiate a new instance of the class. Passing the string
 		// variable automatically loads the HTML for you.
-		$htmlToText = new Html2Text($content);
+		$htmlToText = new Html2Text\Html2Text($content);
 
 		// The HTML is likely full of relative links, so let's specify
 		// an absolute source.
