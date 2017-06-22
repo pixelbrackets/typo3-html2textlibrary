@@ -20,27 +20,27 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-class Html2TextLibrary extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
-	var $prefixId = 'Html2TextLibrary'; // Same as class name
-	var $scriptRelPath = 'Classes/Utility/Html2TextLibrary.php'; // Path to this script relative to the extension dir.
-	var $extKey = 'html2textlibrary'; // The extension key.
-	var $pi_checkCHash = TRUE;
+class Html2TextLibrary extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
+{
+    public $prefixId = 'Html2TextLibrary'; // Same as class name
+    public $scriptRelPath = 'Classes/Utility/Html2TextLibrary.php'; // Path to this script relative to the extension dir.
+    public $extKey = 'html2textlibrary'; // The extension key.
+    public $pi_checkCHash = true;
 
-	function convert($content, $conf) {
-		// Instantiate a new instance of the class. Passing the string
-		// variable automatically loads the HTML for you.
-		$htmlToText = new Html2Text\Html2Text($content);
+    public function convert($content, $conf)
+    {
+        // Instantiate a new instance of the class. Passing the string
+        // variable automatically loads the HTML for you.
+        $htmlToText = new Html2Text\Html2Text($content);
 
-		// The HTML is likely full of relative links, so let's specify
-		// an absolute source.
-		$htmlToText->set_base_url($GLOBALS['TSFE']->absRefPrefix);
+        // The HTML is likely full of relative links, so let's specify
+        // an absolute source.
+        $htmlToText->set_base_url($GLOBALS['TSFE']->absRefPrefix);
 
-		// Simply call the get_text() method for the class to convert
-		// the HTML to the plain text. Store it into the variable.
-		$text = $htmlToText->get_text();
+        // Simply call the get_text() method for the class to convert
+        // the HTML to the plain text. Store it into the variable.
+        $text = $htmlToText->get_text();
 
-		return ($text);
-	}
+        return $text;
+    }
 }
-
-?>
