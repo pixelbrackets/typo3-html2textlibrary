@@ -20,7 +20,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-class Html2TextLibrary extends tslib_pibase {
+class Html2TextLibrary extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
 	var $prefixId = 'Html2TextLibrary'; // Same as class name
 	var $scriptRelPath = 'Classes/Utility/Html2TextLibrary.php'; // Path to this script relative to the extension dir.
 	var $extKey = 'html2textlibrary'; // The extension key.
