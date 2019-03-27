@@ -4,11 +4,12 @@ plaintext {
 
   config {
     disableAllHeaderCode = 1
+    additionalHeaders = Content-type:text/plain;charset=utf-8
+    renderCharset = utf-8
   }
 
-  10 = USER
-  ### TemplaVoila or any other Template Engine
-  10.userFunc = tx_templavoila_pi1->main_page
+  ### Inherit rendering of content records from page template
+  10 < page.10
   ### Pass HTML output to Html2Text Script
   10.stdWrap.preUserFunc = Html2TextLibrary->convert
   ### Add Direct Mail wrapper tags for plaintext newsletter
