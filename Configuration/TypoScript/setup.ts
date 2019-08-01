@@ -12,6 +12,8 @@ plaintext {
   10 < page.10
   ### Pass HTML output to Html2Text Script
   10.stdWrap.preUserFunc = Html2TextLibrary->convert
-  ### Add Direct Mail wrapper tags for plaintext newsletter
+
+  ### Optional: Add Direct Mail wrapper tags for plain text newsletter
   10.stdWrap.outerWrap = <!--DMAILER_SECTION_BOUNDARY_-->|<!--DMAILER_SECTION_BOUNDARY_END-->
+  10.stdWrap.outerWrap.if.isTrue = {$plugin.tx_html2textlibrary.addDirectMailWrapperTags}
 }
