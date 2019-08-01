@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2019-08-01 Dan Untenzu <untenzu@webit.de>
+  * 3.0.0
+  * FEATURE Move TypoScript include
+  * FEATURE TypoScript: Inherit page template
+  * FEATURE Add Composer
+
 2017-06-22 Dan Untenzu <untenzu@webit.de>
   * 2.0.0
   * FEATURE Remove manual includes
@@ -12,4 +18,3 @@ Changelog
   * 1.0.0
   * TASK Fork EXT:ods_plaintext
   * FEATURE Update html2text script to 1.0.1
-

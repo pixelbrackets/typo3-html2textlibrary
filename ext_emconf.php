@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'HTML to TXT Library',
     'description' => 'Creates a plain text version of a webpage using the html2text library',
     'category' => 'misc',
@@ -11,12 +11,12 @@ $EM_CONF[$_EXTKEY] = array(
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
-    'version' => '1.0.0',
-    'constraints' => array(
-        'depends' => array(
+    'version' => '3.0.0',
+    'constraints' => [
+        'depends' => [
             'typo3' => '7.6.0-8.7.99',
-        ),
-        'conflicts' => array(),
-        'suggests' => array()
-    )
-);
+        ],
+        'conflicts' => [],
+        'suggests' => []
+    ]
+];
