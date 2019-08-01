@@ -31,9 +31,6 @@ class Html2TextLibrary extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
     {
         $htmlToText = new \Html2Text\Html2Text($content);
 
-        // Use absolute links
-        $htmlToText->setBaseUrl($GLOBALS['TSFE']->absRefPrefix);
-
         return $htmlToText->getText();
     }
 }
