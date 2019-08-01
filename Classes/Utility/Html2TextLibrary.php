@@ -30,7 +30,8 @@ class Html2TextLibrary extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
     public function convert($content, $conf)
     {
         $options = [
-            'do_links' => $conf['renderLinks'] ?? 'table'
+            'do_links' => $conf['renderLinks'] ?? 'table',
+            'width' => $conf['textWidth'] ?? 70
         ];
         $htmlToText = new \Html2Text\Html2Text($content, $options);
 
