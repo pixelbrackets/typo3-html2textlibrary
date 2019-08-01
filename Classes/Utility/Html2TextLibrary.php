@@ -29,18 +29,11 @@ class Html2TextLibrary extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
 
     public function convert($content, $conf)
     {
-        // Instantiate a new instance of the class. Passing the string
-        // variable automatically loads the HTML for you.
         $htmlToText = new \Html2Text\Html2Text($content);
 
-        // The HTML is likely full of relative links, so let's specify
-        // an absolute source.
-        $htmlToText->set_base_url($GLOBALS['TSFE']->absRefPrefix);
+        // Use absolute links
+        $htmlToText->setBaseUrl($GLOBALS['TSFE']->absRefPrefix);
 
-        // Simply call the get_text() method for the class to convert
-        // the HTML to the plain text. Store it into the variable.
-        $text = $htmlToText->get_text();
-
-        return $text;
+        return $htmlToText->getText();
     }
 }
