@@ -1,0 +1,24 @@
+{
+    "name": "webit-de/html2textlibrary",
+    "description": "This TYPO3 CMS extension creates a plain text version of a webpage using the html2text library",
+    "homepage": "https://github.com/webit-de/typo3-html2textlibrary/",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "require": {
+        "php": ">=5.5.0",
+        "typo3/cms-core": "^7.6 || ^8.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebitDe\\Html2TextLibrary\\": "Classes/"
+        },
+        "classmap": [
+            "Classes/Utility/Html2Text.php",
+            "Classes/Utility/Html2TextLibrary.php"
+        ]
+    },
+    "replace": {
+        "html2textlibrary": "self.version",
+        "typo3-ter/html2textlibrary": "self.version"
+    }
+}
