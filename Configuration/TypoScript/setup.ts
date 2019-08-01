@@ -12,6 +12,7 @@ plaintext {
   10 < page.10
   ### Pass HTML output to Html2Text Script
   10.stdWrap.preUserFunc = Html2TextLibrary->convert
+  10.stdWrap.preUserFunc.renderLinks = {$plugin.tx_html2textlibrary.renderLinks}
 
   ### Optional: Add Direct Mail wrapper tags for plain text newsletter
   10.stdWrap.outerWrap = <!--DMAILER_SECTION_BOUNDARY_-->|<!--DMAILER_SECTION_BOUNDARY_END-->
