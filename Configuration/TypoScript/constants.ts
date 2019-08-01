@@ -1,1 +1,1 @@
-plugin.tx_html2textlibrary.addDirectMailWrapperTags = 1
+plugin.tx_html2textlibrary.addDirectMailWrapperTags = 0
