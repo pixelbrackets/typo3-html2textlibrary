@@ -2,6 +2,12 @@ Changelog
 =========
 
 2019-08-01 Dan Untenzu <untenzu@webit.de>
+  * 3.1.0
+  * FEATURE Update html2text script to 4.2.0
+  * BUGFIX Remove link manipulation
+  * FEATURE Render links as table
+
+2019-08-01 Dan Untenzu <untenzu@webit.de>
   * 3.0.0
   * FEATURE Move TypoScript include
   * FEATURE TypoScript: Inherit page template
