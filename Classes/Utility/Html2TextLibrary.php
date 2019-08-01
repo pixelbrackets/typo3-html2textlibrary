@@ -29,7 +29,7 @@ class Html2TextLibrary extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
 
     public function convert($content, $conf)
     {
-        $htmlToText = new \Html2Text\Html2Text($content);
+        $htmlToText = new \Html2Text\Html2Text($content, ['do_links' => 'table']);
 
         return $htmlToText->getText();
     }
