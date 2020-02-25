@@ -18,7 +18,6 @@
         ]
     },
     "replace": {
-        "html2textlibrary": "self.version",
         "typo3-ter/html2textlibrary": "self.version"
     }
 }
