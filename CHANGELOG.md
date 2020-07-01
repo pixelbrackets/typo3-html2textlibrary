@@ -1,5 +1,9 @@
-Changelog
-=========
+# Changelog
+
+2020-06-25 Paul Luding <luding@webit.de>
+  * 5.0.0
+  * FEATURE Update html2text script to 4.3.0
+  * FEATURE Update dependencies - Drop TYPO3 7 support, add TYPO3 9
 
 2019-08-01 Dan Untenzu <untenzu@webit.de>
   * 4.0.0
