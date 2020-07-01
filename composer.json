@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.5.0",
         "typo3/cms-core": "^8.7 || ^9.5",
-        "html2text/html2text": "^4.2"
+        "html2text/html2text": "^4.3"
     },
     "autoload": {
         "psr-4": {
