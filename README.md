@@ -23,7 +23,7 @@ Packagist Entry https://packagist.org/packages/webit-de/html2textlibrary/
 Source
 ------
 
-https://github.com/webit-de/html2textlibrary/
+https://github.com/webit-de/typo3-html2textlibrary/
 
 Usage
 -----
