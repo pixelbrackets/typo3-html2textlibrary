@@ -1,5 +1,9 @@
 # Changelog
 
+2021-03-23 Paul Luding <luding@webit.de>
+* 5.0.1
+* FEATURE Update composer.json to follow TYPO3 and packagist conventions
+
 2020-06-25 Paul Luding <luding@webit.de>
   * 5.0.0
   * FEATURE Update html2text script to 4.3.0
